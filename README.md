@@ -4,7 +4,7 @@
 
 int main(void) {
     
-    int i=1;
+    int i;
     int n;
     unsigned long long fac = 1;
    
@@ -14,11 +14,10 @@ int main(void) {
     scanf("%d",&n);
     
     if(n==0){
-    printf("the value of the factorial is 1.");
+             printf("the value of the factorial is 1.");
     } else {
-	        while(i <= n){
+	        for(i=1; i<= n; i++){
 	        fac*=i;
-	        i++;
             }
       }
 	printf("factorial is=%llu",fac);
